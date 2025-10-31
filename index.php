@@ -14,15 +14,15 @@
     </header>
 
     <main>
-        <p><a href="/public/cadastroUsuario.php">Cadastrar Usuarios</a></p>
+        <p><a href="public/cadastroUsuario.php">Cadastrar Usuarios</a></p>
         
         <br>
 
-        <p><a href="/public/cadastroTarefas.php">Cadastrar Tarefas</a></p>
+        <p><a href="public/cadastroTarefas.php">Cadastrar Tarefas</a></p>
         
         <br>
 
-        <p><a href="/public/gerenciamentoTarefas.php">Gerenciamento de Tarefas</a></p>
+        <p><a href="public/gerenciamentoTarefas.php">Gerenciamento de Tarefas</a></p>
         
     </main>
 

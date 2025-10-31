@@ -14,7 +14,7 @@ CREATE TABLE Tarefas(
     descrisao varchar(120) not null,
     setor varchar(120) not null,
     prioridade ENUM('baixa','média','alta') not null,
-    data default timestamp not null,
+    data TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     status ENUM('a fazer','fazendo','pronto') not null,
     FOREIGN KEY (id_usuario) REFERENCES Usuario(id)
 );

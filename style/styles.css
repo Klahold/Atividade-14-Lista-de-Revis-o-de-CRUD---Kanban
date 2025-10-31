@@ -1,8 +1,26 @@
 body {
-    background-color: beige;
+    background-color: rgba(226, 226, 186, 0.801);
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header {
     text-align: center;
+}
+main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+}
+.linha{
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    border-color: black;
+    border-radius: 50px;
+    width: auto;
+    padding: 20px;
+    margin: 10px;
 }

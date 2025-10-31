@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
 
-    $sql = " INSERT INTO usuarios (name,email) VALUE ('$name','$email')";
+    $sql = " INSERT INTO usuario (nome,email) VALUE ('$nome','$email')";
 
     if ($conn->query($sql) === true) {
         echo "Novo registro criado com sucesso.";
@@ -41,5 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     </form>
     
+    <a href="../index.php">Voltar</a>
+
 </body>
 </html>
