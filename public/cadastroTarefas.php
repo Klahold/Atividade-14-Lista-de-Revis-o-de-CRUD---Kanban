@@ -2,6 +2,14 @@
 
 include '../config/db.php';
 
+session_start();
+
+if (empty($_SESSION["user_id"])):
+
+    header("Location: index.php");
+
+endif;
+
 $usuarios = $conn->query("SELECT id, nome FROM Usuario");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -69,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     </form>
 
-    <p><a href="../index.php">Voltar</a></p>
+    <p><a href="../menu.php">Voltar</a></p>
 
 </body>
 

@@ -18,3 +18,6 @@ CREATE TABLE Tarefas(
     status ENUM('a fazer','fazendo','pronto') not null,
     FOREIGN KEY (id_usuario) REFERENCES Usuario(id)
 );
+
+INSERT INTO Usuario (nome, email) VALUES
+('gustavo', 'gustavo@email.com');

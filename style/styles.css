@@ -2,20 +2,27 @@ body {
     background-color: rgba(226, 226, 186, 0.801);
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
 header {
     text-align: center;
 }
+
 main {
     display: flex;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
-.center{
+.center {
     display: flex;
 }
-.linha{
+
+.linha {
     background-color: rgb(255, 255, 255);
     border: 1px;
     border-color: black;
@@ -23,4 +30,54 @@ main {
     width: auto;
     padding: 20px;
     margin: 10px;
+}
+
+.botao {
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    border-color: black;
+    border-radius: 50px;
+    width: auto;
+    padding: 20px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.msg {
+    color: red;
+}
+
+.card {
+    border: 1px solid #000000;
+    background-color: rgb(255, 255, 255);
+    width: min-content;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+}
+
+.button {
+    padding: 8px 12px;
+}
+
+.campo {
+    background-color: rgb(187, 182, 182);
+    border: 1px;
+    border-color: black;
+    border-radius: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
 }

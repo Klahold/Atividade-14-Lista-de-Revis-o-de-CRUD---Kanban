@@ -2,6 +2,14 @@
 
 include '../config/db.php';
 
+session_start();
+
+if (empty($_SESSION["user_id"])):
+
+    header("Location: index.php");
+
+endif;
+
 $sqlAFazer = "SELECT * FROM tarefas WHERE status= 'a fazer'";
 
 $sqlFazendo = "SELECT * FROM tarefas WHERE status= 'fazendo'";
@@ -158,7 +166,7 @@ $pronto = $conn->query($sqlPronto);
 
     </main>
 
-    <a href="../index.php">Voltar</a>
+    <a href="../menu.php">Voltar</a>
 
 </body>
 

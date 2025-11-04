@@ -2,6 +2,14 @@
 
 include '../config/db.php';
 
+session_start();
+
+if (empty($_SESSION["user_id"])):
+
+    header("Location: index.php");
+
+endif;
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $nome = $_POST['nome'];
@@ -41,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     </form>
     
-    <a href="../index.php">Voltar</a>
+    <a href="../menu.php">Voltar</a>
 
 </body>
 </html>
